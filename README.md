@@ -22,6 +22,10 @@
       使用@Retention和@Target注解来指定注解的生命周期和使用范围，并定义了一个name属性来表示属性的名称
     
   - 2.2：'src/main/java/com/ksyun/whgc/yinruiyi/CollectionUtils.java'，定义一个工具类来输出集合对象
+  
+- 题目3：'src/main/java/com/ksyun/whgc/yinruiyi/PrintThread.java'
+
+  PrintThread类实现了Runnable接口，其中run方法中的逻辑是保证每个线程按照ABCABC...的顺序打印自己的ID值。
 
 
 ------
@@ -66,6 +70,13 @@
   | 李四 |  20  | 上海市浦东新区 | 2023年4月20日 |
   | 王五 |  22  |  广州市天河区  | 2023年4月20日 |
   
+- 题目3：'src/test/java/TestPrintThread.java'，输出样例：
+
+  ```
+  输出：ACBACBACBACBACB
+  ```
+
+  在每个线程中，首先通过prev锁来保证前一个线程已经打印完自己的ID值。然后通过self锁来打印自己的ID值，并通知下一个线程可以开始打印了。最后线程释放self锁，并等待前一个线程的通知，从而保证了三个线程的执行顺序。
 
 ------
 
@@ -79,4 +90,5 @@
 
 - 提交记录 4：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Fri Apr 21 09:15:26 2023 +0800
 - 提交记录 5：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Fri Apr 21 09:18:57 2023 +0800
-- 提交记录 6：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：
+- 提交记录 6：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Fri Apr 21 09:34:59 2023 +0800
+- 提交记录 7：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：

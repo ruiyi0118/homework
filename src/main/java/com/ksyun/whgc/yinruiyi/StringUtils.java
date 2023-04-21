@@ -13,4 +13,12 @@ public class StringUtils {
         return sb.reverse().toString();
     }
 
+    // 统计字符串中每个字母出现的次数
+    public static Map<Character, Integer> countLetters(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : s.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        return map;
+    }
 }

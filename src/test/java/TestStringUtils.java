@@ -11,5 +11,7 @@ public class TestStringUtils {
         String reversed = StringUtils.reverse(s);
         System.out.println("反转的字符串为: " + reversed);
 
+        Map<Character, Integer> countMap = StringUtils.countLetters(s);
+        System.out.println("每个字母出现的次数: " + countMap);
     }
 }

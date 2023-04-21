@@ -20,6 +20,8 @@
     - 'src/main/java/com/ksyun/whgc/yinruiyi/Property.java'
 
       使用@Retention和@Target注解来指定注解的生命周期和使用范围，并定义了一个name属性来表示属性的名称
+    
+  - 2.2：'src/main/java/com/ksyun/whgc/yinruiyi/CollectionUtils.java'，定义一个工具类来输出集合对象
 
 
 ------
@@ -56,8 +58,13 @@
     不含有重复字符的最长子串：bca
     ```
   
-- 题目2：
+- 题目2：'src/test/java/TestStudent.java'，输出样例，students.xlsx文件在Excel中打开：
 
+  | 姓名 | 年龄 |      住址      |   出生年月    |
+  | :--: | :--: | :------------: | :-----------: |
+  | 张三 |  18  |  北京市海淀区  | 2023年4月20日 |
+  | 李四 |  20  | 上海市浦东新区 | 2023年4月20日 |
+  | 王五 |  22  |  广州市天河区  | 2023年4月20日 |
   
 
 ------
@@ -71,5 +78,5 @@
 - 提交记录 3：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Fri Apr 21 09:09:00 2023 +0800
 
 - 提交记录 4：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Fri Apr 21 09:15:26 2023 +0800
-
-- 提交记录 5：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：
+- 提交记录 5：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：Fri Apr 21 09:18:57 2023 +0800
+- 提交记录 6：commit id：“@ruiyi0118” <906063940@qq.com>，提交时间：
